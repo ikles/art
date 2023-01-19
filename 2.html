@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. О нас</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="bread">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><span>О нас</span></li>
+          </ul>
+        </div>
+        <!--bread-->
+        <div class="about__row">
+          <div class="about__content">
+            <h1 class="about__h1">О галерее</h1>
+            <p>Художественная галерея ABRAMOVA GALLERY — это выставочное пространство, где представлены работы ведущих
+              российских художников: живописцев, графиков и скульпторов. Среди них как состоявшиеся авторы, чьи
+              произведения находятся в крупных музейных коллекциях, так и молодые, только начинающие свой
+              профессиональный путь. Предпочтение отдается художникам, связанным с традиционным живописным мастерством и
+              языком «визуального мышления»: многозначным, чувственным, иррациональным.</p>
+            <p>В выставочном зале галереи проходят временные выставки, а в шоу-руме представлена постоянная экспозиция.
+            </p>
+            <p>Искусствоведы ABRAMOVA GALLERY помогут с выбором произведения искусства для частной или корпоративной
+              коллекции, интерьера, подарка. Наши рекомендации основаны на многих факторах, но главный из них — создание
+              эмоционального баланса между обладателем и произведением.</p>
+          </div>
+          <div class="about__img-w">
+            <img src="img/about.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!--contain-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>
