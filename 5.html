@@ -27,40 +27,23 @@
         <div class="contain">
           <h1 class="catalog__h1">Каталог</h1>
           <div class="row-20">
-            <div class="catalog__col">
-             @@include('var/_catalog__item.html',{
-               "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
-               "img":"img/catalog-img-1.jpg",
-               "price":"160 000 р.",
-               "info":"Спай Алексей; 132х128"
-             })             
-            </div>
-            <div class="catalog__col">
-              @@include('var/_catalog__item.html',{
-               "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
-               "img":"img/catalog-img-2.jpg",
-               "price":"270 000 р.",
-               "info":"Фатхуллина Антонина; 210х160"
-             })
-            </div>
-            <div class="catalog__col">
-              @@include('var/_catalog__item.html',{
-               "title":"Вид из окна",
-               "img":"img/catalog-img-3.jpg",
-               "price":"—",
-               "info":"Хахо Владимир; 65х41"
-             })
-            </div>
-            <div class="catalog__col">
-              @@include('var/_catalog__item.html',{
-               "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
-               "img":"img/catalog-img-4.jpg",
-               "price":"270 000 р.",
-               "info":"Фатхуллина Антонина; 210х160"
-             })
-            </div>
-            
+            @@include('var/_catalog__row-1.html')
+            @@include('var/_catalog__row-2.html')
+            @@include('var/_catalog__row-3.html')            
+            @@include('var/_catalog__row-3.html')            
+            @@include('var/_catalog__row-2.html')
           </div>
+
+          <ul class="spagin">
+            <li><a class="spagin-control spagin-prev disable" href="#"></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>            
+            <li><a href="#">...</a></li>
+            <li><a href="#">30</a></li>
+            <li><a class="spagin-control spagin-next" href="#"></a></li>    
+          </ul>
+
         </div>
       </div><!--catalog-->
     </main>

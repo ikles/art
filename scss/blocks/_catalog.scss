@@ -1,5 +1,6 @@
 .catalog {
   margin-top: 20px;
+  padding-bottom: 102px;
 }
 .catalog__col {
   padding: 0 20px;
@@ -9,4 +10,59 @@
 
 .catalog__h1 {
   margin-bottom: 60px;
+}
+
+ul.spagin {
+  display: flex;  
+  justify-content: center;
+  list-style: none;
+  margin-top: -23px;  
+  align-items: center;
+  li {
+    margin: 0 12px;
+    a {
+      display: block;
+      font-weight: 500;
+      font-size: 18px;
+      color: #433D3D;
+      opacity: 0.4;
+      font-family: $ff2;
+      &:hover {
+        text-decoration: none;
+        opacity: 1;
+        color: #433D3D;
+      }
+      &.active {
+        color: #313130;
+        opacity: 1;
+        color: #433D3D;
+      }
+      &.spagin-control {
+        opacity: 1;
+      }
+      &.disable {
+        opacity: 0.4;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.spagin-control {  
+  width: 15px;
+  height: 14px;
+  display: block;
+  background: url("../img/arr-pagin.svg") $nr 0 0;
+  
+}
+.spagin-prev {
+  margin-right: auto;
+  margin-right: 4px;
+}
+.spagin-next {
+  margin-left: auto;
+  transform: rotate(180deg);
+  margin-left: 4px;
 }
