@@ -886,6 +886,44 @@ ul.spagin {
     padding-bottom: 52px;
     margin-top: 8px; } }
 
+.catalog__tags {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px; }
+
+.catalog__tag {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 29px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  margin: 0 5px 10px 5px;
+  background: #A18F62;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none; }
+  .catalog__tag:hover {
+    text-decoration: none;
+    background: #BCA979; }
+
 @media (max-width: 660px) {
   .catalog__col {
     width: 50%; }
@@ -924,7 +962,9 @@ ul.spagin {
     height: 40px;
     font-size: 16px; }
   .catalog__content {
-    margin-bottom: 18px; } }
+    margin-bottom: 18px; }
+  .catalog__tag {
+    padding: 0 10px; } }
 
 @media only screen and (max-width: 1220px) {
   .contain {

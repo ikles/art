@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. Живопись</title>
+  @@include('var/_stl.html')
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="bread">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><span>Живопись</span></li>
+          </ul>
+        </div><!--bread-->
+      </div><!--contain-->
+      <div class="catalog">
+        <div class="contain">
+          <h1 class="catalog-tags__h1">Живопись</h1>
+
+          <div class="catalog__tags">
+            <a href="#" class="catalog__tag">Буравлева Евгения</a>
+            <a href="#" class="catalog__tag">Заремба Евгений</a>
+            <a href="#" class="catalog__tag">Кабин Александр</a>
+            <a href="#" class="catalog__tag">Мигачев Владимир</a>
+            <a href="#" class="catalog__tag">Михайлов Вячеслав</a>
+            <a href="#" class="catalog__tag">Нода Андрей</a>
+            <a href="#" class="catalog__tag">Саунин Денис</a>
+            <a href="#" class="catalog__tag">Сяглов Андрей</a>
+            <a href="#" class="catalog__tag">Воронова Люся</a>
+            <a href="#" class="catalog__tag">Хахо Владимир</a>
+            <a href="#" class="catalog__tag">Кулик Игорь</a>
+            <a href="#" class="catalog__tag">Шумахер Елена</a>
+            <a href="#" class="catalog__tag">Заремба Евгений</a>
+            <a href="#" class="catalog__tag">Кабин Александр</a>
+            <a href="#" class="catalog__tag">Мигачев Владимир</a>
+            <a href="#" class="catalog__tag">Михайлов Вячеслав</a>
+            <a href="#" class="catalog__tag">Нода Андрей</a>
+            <a href="#" class="catalog__tag">Саунин Денис</a>
+            <a href="#" class="catalog__tag">Сяглов Андрей</a>
+            <a href="#" class="catalog__tag">Воронова Люся</a>
+            <a href="#" class="catalog__tag">Хахо Владимир</a>   
+            <a href="#" class="catalog__tag">Кабин Александр</a>
+            <a href="#" class="catalog__tag">Мигачев Владимир</a>
+            <a href="#" class="catalog__tag">Михайлов Вячеслав</a>         
+          </div>
+
+          <div class="row-20">
+            @@include('var/_catalog__row-1.html')
+            @@include('var/_catalog__row-2.html')
+            @@include('var/_catalog__row-3.html')            
+            @@include('var/_catalog__row-3.html')            
+            @@include('var/_catalog__row-2.html')
+          </div>
+          <div class="catalog__spagin">
+            @@include('var/_spagin.html')
+          </div>
+        </div>
+      </div><!--catalog-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
