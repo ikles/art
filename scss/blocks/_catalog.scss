@@ -12,11 +12,14 @@
   margin-bottom: 60px;
 }
 
+.catalog__spagin {
+  margin-top: -23px;  
+}
+
 ul.spagin {
   display: flex;  
   justify-content: center;
   list-style: none;
-  margin-top: -23px;  
   align-items: center;
   li {
     margin: 0 12px;
@@ -64,5 +67,121 @@ ul.spagin {
 .spagin-next {
   margin-left: auto;
   transform: rotate(180deg);
-  margin-left: 4px;
+  margin-right: 4px;
+}
+
+
+@media (max-width : 1100px) {
+  .catalog__img-w {
+    height: 200px;
+  }
+}
+
+@media (max-width : 991px) {
+  .catalog__col {
+    width: 33.333%;
+    margin-bottom: 50px;
+  }
+  .catalog__img-w {
+    height: 190px;
+  }  
+  .catalog__btn {
+    font-size: 12px;
+    height: 29px;
+    padding: 0 20px;
+  }
+  .catalog__title {
+    font-size: 14px;
+  }
+  .catalog__info {
+    font-size: 12px;
+  }
+  .catalog__content {
+    min-height: unset;
+    margin-bottom: 15px;
+  }
+  .catalog__price {
+    margin-top: 15px;  
+    font-size: 16px;
+    line-height: 125%;
+  }
+  .catalog__spagin {
+    margin-top: 18px;
+  }
+  ul.spagin {
+   li {
+    margin: 0 20px;
+    a {
+     font-size: 22px;
+   }
+ }
+}
+.spagin-control {
+  width: 18px;
+  height: 17px;    
+  background-size: 18px;
+}
+.catalog {
+  padding-bottom: 52px;
+  margin-top: 8px;
+}
+}
+
+@media (max-width : 660px) {
+  .catalog__col {
+    width: 50%;
+  }
+  .catalog__h1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width : 480px) {
+  .catalog__col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .catalog__item {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .catalog__spagin {
+    margin-top: -10px;
+  }
+  ul.spagin li {
+    &:nth-last-child(3),
+    &:nth-last-child(2) {
+      display: none;
+    }
+  }
+  ul.spagin li a {
+    font-size: 20px;
+  }
+  .spagin-control {
+    width: 16px;
+    height: 15px;             
+    background-size: 16px;
+  }
+  .catalog__img-w {
+    height: 250px;
+  }
+  .catalog__title {
+    font-size: 16px;
+  }
+  .catalog__info {
+    font-size: 14px;
+  }
+  .catalog__price {
+    font-size: 20px;
+    margin-top: 11px;
+  }
+  .catalog__btn {
+    padding: 0 25px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .catalog__content {
+    margin-bottom: 18px;
+  }
 }

@@ -71,6 +71,7 @@
 @media (max-width : 991px) {
   .footer {
     padding-bottom: 40px;
+    padding-top: 50px;
   }
   .footer__row-2 {    
     flex-wrap: wrap;
@@ -78,6 +79,9 @@
       width: 100%;
       margin-bottom: 10px;
     } 
+  }
+  .footer__row {
+    margin-top: 49px;
   }
 }
 
@@ -92,5 +96,12 @@
   } 
   .footer__row-2 > * {
     margin-bottom: 5px;
+  }
+}
+
+
+@media (max-width : 480px) {
+  .footer {
+    padding-top: 51px;
   }
 }

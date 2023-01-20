@@ -196,7 +196,7 @@ h1 {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	display: flex;	        
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .catalog__price {
@@ -207,6 +207,26 @@ h1 {
 	line-height: 120%;	
 	margin-top: auto;
 	font-family: $ff2;
+}
+
+@media (max-width : 480px) {
+	.bread {
+		margin-top: 0;
+		ul {
+			li {
+				font-size: 12px;
+				&:not(:last-child) {
+					margin-right: 12px;
+					&:after {
+						width: 11px;
+						height: 11px;		 	 		
+						background-size: 10px;	
+						margin-left: 13px;
+					}
+				}
+			}
+		}
+	}
 }
 
 
