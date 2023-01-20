@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1. Главная</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="advert">
+        <div class="contain">
+          <div class="advert__row">
+            <div class="advert__left">
+              <div class="advert__content">
+                <div class="advert__date">15 октября&nbsp;— 20 октября</div>
+                <div class="advert__title">На Мадагаскар<br> в поисках солнца</div>
+                <div class="advert__text">«Хрупкие оболочки» объединила работы 8&nbsp;художников: Татьяны Дубовской,
+                  Сергея Карева, Сергея Колосова, Маши Лам, Алексея Спая, Наталии Спечинской, Евгении Тарасовой
+                и&nbsp;Антонины Фатхуллиной.</div>
+              </div><a href="#" class="advert__btn">Подробнее</a>
+            </div>
+            <div class="advert__right">
+              <div class="advert__slider">
+                <div class="advert__slide">
+                  <img src="img/advert.jpg" class="advert__img">
+                </div>
+                <div class="advert__slide">
+                  <img src="img/advert.jpg" class="advert__img">
+                </div>
+                <div class="advert__slide">
+                  <img src="img/advert.jpg" class="advert__img">
+                </div>
+                <div class="advert__slide">
+                  <img src="img/advert.jpg" class="advert__img">
+                </div>
+                <div class="advert__slide">
+                  <img src="img/advert.jpg" class="advert__img">
+                </div>
+              </div><!--advert__slider-->            
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>

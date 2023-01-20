@@ -24,18 +24,18 @@ jQuery(document).ready(function( $ ) {
 
 
 
-/*$('.slider-1').slick({
+$('.advert__slider').slick({
   infinite: true,    
-  speed: 6900,
+  speed: 600,
   slidesToScroll: 1,
-  autoplay: true,    
-  slidesToShow: 4,
-  cssEase: 'linear',
-  autoplay: true,
+  autoplay: false,    
+  slidesToShow: 1,
+  cssEase: 'linear',  
   autoplaySpeed: 0,  
-  arrows: false,
+  arrows: true,
+  dots: true,
   pauseOnHover: true,  
-});*/
+});
 
 
 
