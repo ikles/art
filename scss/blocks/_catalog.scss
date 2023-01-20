@@ -8,6 +8,19 @@
   margin-bottom: 101px;
 }
 
+
+
+.catalog__item {
+  display: block;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    .catalog__title {
+      color: #979797;
+    }
+  }
+}
+
 .catalog__h1 {
   margin-bottom: 60px;
 }
@@ -70,6 +83,72 @@ ul.spagin {
   margin-right: 4px;
 }
 
+.catalog__tags {
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.catalog__tag {
+  display: inline-flex;  
+  align-items: center;
+  justify-content: center;
+  height: 29px;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: $ff2;
+  color: #FFFFFF;
+  margin: 0 5px 10px 5px;
+  background: #A18F62;  
+  flex: none;
+  &:hover {
+    text-decoration: none;
+    background: #BCA979;
+  }
+}
+
+
+.artists__tags {
+  margin-bottom: 60px;
+}
+
+a.artists__tag {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  color: #433D3D;
+  font-family: $ff2;
+  color: #433D3D;
+  &:hover {    
+    color: #A18F62;
+    text-decoration: underline;
+  }
+  &.active {
+    color: #A18F62;
+    text-decoration: underline;
+  }
+  &:not(:last-child) {
+    margin-right: 17px;
+  }
+}
+
+.catalog__title-2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.artists__col {
+  margin-bottom: 60px;
+}
+
+.artists__spagin {
+  margin-top: 20px;
+}
+
 
 @media (max-width : 1100px) {
   .catalog__img-w {
@@ -92,6 +171,10 @@ ul.spagin {
   }
   .catalog__title {
     font-size: 14px;
+  }
+  .catalog__title-2 {
+    font-size: 16px;
+    margin-top: 20px;
   }
   .catalog__info {
     font-size: 12px;
@@ -127,32 +210,8 @@ ul.spagin {
 }
 }
 
-.catalog__tags {
-  display: flex;  
-  flex-wrap: wrap;  
-          justify-content: center;
-          margin-bottom: 20px;
-}
 
-.catalog__tag {
-  display: inline-flex;  
-  align-items: center;
-  justify-content: center;
-  height: 29px;
-  padding: 0 20px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  font-family: $ff2;
-  color: #FFFFFF;
-  margin: 0 5px 10px 5px;
-  background: #A18F62;  
-  flex: none;
-  &:hover {
-    text-decoration: none;
-    background: #BCA979;
-  }
-}
+
 
 @media (max-width : 660px) {
   .catalog__col {
@@ -214,4 +273,18 @@ ul.spagin {
   .catalog__tag {
     padding: 0 10px;
   }
-}
+  a.artists__tag {
+    font-size: 14px;
+  }
+  .artists__tags {
+    margin-bottom: 50px;
+  }
+  .catalog__col {
+    margin-bottom: 50px;
+  }
+  .artists__spagin {
+    margin-top: 0;
+  }
+} //480
+
+

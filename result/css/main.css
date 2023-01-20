@@ -704,7 +704,7 @@ h1 {
     height: auto; }
 
 .footer__row {
-  margin-top: 36px;
+  margin-top: 39px;
   margin-bottom: 71px; }
 
 .footer__ul {
@@ -789,6 +789,14 @@ h1 {
   width: 25%;
   margin-bottom: 101px; }
 
+.catalog__item {
+  display: block;
+  cursor: pointer; }
+  .catalog__item:hover {
+    text-decoration: none; }
+    .catalog__item:hover .catalog__title {
+      color: #979797; }
+
 .catalog__h1 {
   margin-bottom: 60px; }
 
@@ -847,45 +855,6 @@ ul.spagin {
           transform: rotate(180deg);
   margin-right: 4px; }
 
-@media (max-width: 1100px) {
-  .catalog__img-w {
-    height: 200px; } }
-
-@media (max-width: 991px) {
-  .catalog__col {
-    width: 33.333%;
-    margin-bottom: 50px; }
-  .catalog__img-w {
-    height: 190px; }
-  .catalog__btn {
-    font-size: 12px;
-    height: 29px;
-    padding: 0 20px; }
-  .catalog__title {
-    font-size: 14px; }
-  .catalog__info {
-    font-size: 12px; }
-  .catalog__content {
-    min-height: unset;
-    margin-bottom: 15px; }
-  .catalog__price {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 125%; }
-  .catalog__spagin {
-    margin-top: 18px; }
-  ul.spagin li {
-    margin: 0 20px; }
-    ul.spagin li a {
-      font-size: 22px; }
-  .spagin-control {
-    width: 18px;
-    height: 17px;
-    background-size: 18px; }
-  .catalog {
-    padding-bottom: 52px;
-    margin-top: 8px; } }
-
 .catalog__tags {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -923,6 +892,78 @@ ul.spagin {
   .catalog__tag:hover {
     text-decoration: none;
     background: #BCA979; }
+
+.artists__tags {
+  margin-bottom: 60px; }
+
+a.artists__tag {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+  color: #433D3D;
+  font-family: "Montserrat", sans-serif;
+  color: #433D3D; }
+  a.artists__tag:hover {
+    color: #A18F62;
+    text-decoration: underline; }
+  a.artists__tag.active {
+    color: #A18F62;
+    text-decoration: underline; }
+  a.artists__tag:not(:last-child) {
+    margin-right: 17px; }
+
+.catalog__title-2 {
+  margin-top: 30px;
+  margin-bottom: 0; }
+
+.artists__col {
+  margin-bottom: 60px; }
+
+.artists__spagin {
+  margin-top: 20px; }
+
+@media (max-width: 1100px) {
+  .catalog__img-w {
+    height: 200px; } }
+
+@media (max-width: 991px) {
+  .catalog__col {
+    width: 33.333%;
+    margin-bottom: 50px; }
+  .catalog__img-w {
+    height: 190px; }
+  .catalog__btn {
+    font-size: 12px;
+    height: 29px;
+    padding: 0 20px; }
+  .catalog__title {
+    font-size: 14px; }
+  .catalog__title-2 {
+    font-size: 16px;
+    margin-top: 20px; }
+  .catalog__info {
+    font-size: 12px; }
+  .catalog__content {
+    min-height: unset;
+    margin-bottom: 15px; }
+  .catalog__price {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 125%; }
+  .catalog__spagin {
+    margin-top: 18px; }
+  ul.spagin li {
+    margin: 0 20px; }
+    ul.spagin li a {
+      font-size: 22px; }
+  .spagin-control {
+    width: 18px;
+    height: 17px;
+    background-size: 18px; }
+  .catalog {
+    padding-bottom: 52px;
+    margin-top: 8px; } }
 
 @media (max-width: 660px) {
   .catalog__col {
@@ -964,7 +1005,15 @@ ul.spagin {
   .catalog__content {
     margin-bottom: 18px; }
   .catalog__tag {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+  a.artists__tag {
+    font-size: 14px; }
+  .artists__tags {
+    margin-bottom: 50px; }
+  .catalog__col {
+    margin-bottom: 50px; }
+  .artists__spagin {
+    margin-top: 0; } }
 
 @media only screen and (max-width: 1220px) {
   .contain {

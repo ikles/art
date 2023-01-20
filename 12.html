@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Художники</title>
+  @@include('var/_stl.html')
+</head>
+<body>
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="bread">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><span>Художники</span></li>
+          </ul>
+        </div><!--bread-->
+      </div><!--contain-->
+      <div class="artists catalog">
+        <div class="contain">
+          <h1 class="artists__h1">Художники</h1>
+          <div class="artists__tags">
+            <a href="#" class="artists__tag active">Все</a>
+            <a href="#" class="artists__tag">Живопись</a>
+            <a href="#" class="artists__tag">Скульптура</a>
+            <a href="#" class="artists__tag">Графика</a>
+          </div>
+          <div class="row-20">
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Аксенова Ольга",
+                "img":"img/artists-img-1.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Буравлева Евгения",
+                "img":"img/artists-img-2.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Васильева Ирина",
+                "img":"img/artists-img-3.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Волосенков Феликс",
+                "img":"img/artists-img-4.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Воронова Люся",
+                "img":"img/artists-img-5.jpg"                
+              })
+            </div>
+
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Дубовская Татьяна",
+                "img":"img/artists-img-6.jpg"
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Заремба Евгений",
+                "img":"img/artists-img-7.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Инал-Ипа Константин",
+                "img":"img/artists-img-8.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Аксенова Ольга",
+                "img":"img/artists-img-9.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Буравлева Евгения",
+                "img":"img/artists-img-10.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Васильева Ирина",
+                "img":"img/artists-img-11.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Волосенков Феликс",
+                "img":"img/artists-img-12.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Воронова Люся",
+                "img":"img/artists-img-13.jpg"                
+              })
+            </div>
+
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Дубовская Татьяна",
+                "img":"img/artists-img-14.jpg"
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Заремба Евгений",
+                "img":"img/artists-img-15.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Инал-Ипа Константин",
+                "img":"img/artists-img-16.jpg"                
+              })
+            </div>
+                <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Васильева Ирина",
+                "img":"img/artists-img-17.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Волосенков Феликс",
+                "img":"img/artists-img-18.jpg"                
+              })
+            </div>
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Воронова Люся",
+                "img":"img/artists-img-19.jpg"                
+              })
+            </div>
+
+            <div class="catalog__col artists__col">
+              @@include('var/_catalog__item-2.html',{
+                "title":"Дубовская Татьяна",
+                "img":"img/artists-img-20.jpg"
+              })
+            </div>
+          </div>
+          <div class="artists__spagin">
+            @@include('var/_spagin.html')
+          </div>
+        </div>
+      </div><!--catalog-->
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+</html>
