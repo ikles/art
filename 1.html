@@ -9,9 +9,7 @@
   <title>1. Главная</title>
   @@include('var/_stl.html')
 </head>
-
 <body>
-
   <div class="wrapper">
     @@include('var/_header.html')
     <main class="main">
@@ -59,35 +57,58 @@
         </div>
       </section>
       <section class="mcatalog">
-        <div class="contain">
-          <div class="mcatalog__item">
-            <a href="#" class="mcatalog__btn-1 btn__arr"><span>Живопись</span></a>
-            <div class="row-20">
-              @@include('var/_catalog__row-1.html')
+
+        <div class="mcatalog__item">
+          <div class="contain">
+            <div class="heading__wrap">
+              <div class="h2">Каталог</div>            
+              <a href="#" class="btn__arr"><span>Живопись</span></a>
             </div>
           </div>
-          <div class="mcatalog__item">
-            <div class="mcatalog__btn-w">
-              <a href="#" class="btn__arr"><span>Скульптура и объекты</span></a>
-            </div>
-            <div class="row-20">
-              @@include('var/_catalog__row-2.html')
-            </div>
-          </div>
-          <div class="mcatalog__item">
-            <div class="mcatalog__btn-w">
-              <a href="#" class="btn__arr"><span>Графика</span></a>
-            </div>
-            <div class="row-20">
-              @@include('var/_catalog__row-3.html')
+          <div class="mcatalog__contain contain">
+            <div class="mcatalog__scroll">
+              <div class="row-20 mcatalog__row">
+                @@include('var/_catalog__row-1.html')
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="mcatalog__item">
+          <div class="mcatalog__btn-w">
+            <div class="contain">
+            <a href="#" class="btn__arr"><span>Скульптура <span class="hide-pda">и объекты</span></span></a>
+          </div>
+          </div>
+          <div class="mcatalog__contain contain">
+            <div class="mcatalog__scroll">
+              <div class="row-20 mcatalog__row">
+                @@include('var/_catalog__row-2.html')
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mcatalog__item">
+          <div class="contain">
+          <div class="mcatalog__btn-w">
+            <a href="#" class="btn__arr"><span>Графика</span></a>
+          </div>
+        </div>
+          <div class="mcatalog__contain contain">
+            <div class="mcatalog__scroll">
+              <div class="row-20 mcatalog__row">
+                @@include('var/_catalog__row-3.html')
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </section>
       <section class="art">
         <div class="contain">
           <div class="heading__wrap">
             <div class="h2">Искусство в интерьере</div>
+            <div class="show-pda separator"></div>
             <a href="#" class="btn__arr"><span>Все проекты</span></a>
           </div>
           <div class="art__gal row-20">
@@ -165,7 +186,7 @@
                 <textarea name="mess" class="consult__textarea"
                 placeholder="Напишите ваше сообщение здесь..."></textarea>
                 <label class="consult__label">
-                  <input type="checkbox">
+                  <input type="checkbox" checked>
                   <span></span>
                   <span class="consult__label-text">
                     Ставя отметку, вы даете согласие на обработку своих <br />
@@ -200,9 +221,86 @@
                 Антонины Фатхуллиной...</div>
               </div>
             </div>
+            <div class="exhib__col">
+              <div class="exhib__item">
+                <a href="#" class="exhib__img-w">
+                  <img src="img/exhib-2.jpg" class="exhib__img">
+                </a>
+                <div class="exhib__date">15.09.22 – 15.09.22</div>
+                <a href="#" class="exhib__title">Межсезонье</a>
+                <div class="exhib__desc">Межсезонье — особый период времени, который отличается размытыми дорогами и
+                  резкими перепадами температур. Смена времен года провоцирует определенное состояние души, когда вся
+                жизнь представляется сменой вех: возрастает желание заглянуть в будущее...</div>
+              </div>
+            </div>
+            <div class="exhib__col">
+              <div class="exhib__item">
+                <a href="#" class="exhib__img-w">
+                  <img src="img/exhib-3.jpg" class="exhib__img">
+                </a>
+                <div class="exhib__date">15.09.22 – 15.09.22</div>
+                <a href="#" class="exhib__title">Ностальгия. Среди шума и суеты</a>
+                <div class="exhib__desc">В Abramova Gallery открылась персональная выставка Вадима Леухина «Ностальгия.
+                  Среди шума и суеты». Она продлится до 26 марта. Вадим Леухин — один из заметных и востребованных
+                молодых петербургских художников...</div>
+              </div>
+            </div>
+            <div class="exhib__col">
+              <div class="exhib__item">
+                <a href="#" class="exhib__img-w">
+                  <img src="img/exhib-4.jpg" class="exhib__img">
+                </a>
+                <div class="exhib__date">15.09.22 – 15.09.22</div>
+                <a href="#" class="exhib__title">Легкое забытьё</a>
+                <div class="exhib__desc">Художественный мир Ольги Муравиной соткан из детских воспоминаний, советских
+                  мультиков, материнского опыта, снов и природы. Его персонажи — дети, пупсы, мишки, совы, носороги,
+                собачки и другие создания... </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <section class="subscribe">
+        <div class="contain">
+          <div class="subscribe__title">Подписаться на рассылку новостей</div>
+          <div class="subscribe__text">Анонсы выставок, лекций, новые поступления, спец.предложения, <br>
+          Рассылка выходит 1-2 раза в месяц.</div>
+          <form class="subscribe__form">
+            <input class="subscribe__input" type="text" placeholder="Ваш e-mail">
+            <button class="subscribe__btn btn">Подписаться</button>
+          </form>
+        </div>
+      </section>
+      <section class="cont">
+        <div class="contain">
+          <div class="cont__row">
+            <div class="cont__left">
+              <div class="cont__title">Контакты</div>
+              <div class="cont__adress">
+                Санкт-Петербург,<br />
+                Красногвардейская пл., 3E,<br />
+                Design District DAA, 3 этаж, Е3-130
+              </div>              
+              <a href="#" href="tel:+7 812 640-17-91">+7 812 640-17-91</a>
+              <a href="#" href="tel:+7 905 22-703-55">+7 905 22-703-55</a>
+              <a href="#" href="mailto:info@abramovagallery.art">info@abramovagallery.art</a>
+              <div class="cont__hours">
+                Часы работы:<br />
+                вторник - суббота с 12:00 до 19:00
+              </div>
+              <div class="cont__socials">
+                <a href="" class="cont__social"><img src="img/soc-1.svg" /></a>
+                <a href="" class="cont__social"><img src="img/soc-2.svg" /></a>
+                <a href="" class="cont__social"><img src="img/soc-3.svg" /></a>
+              </div>
+            </div>
+            <div class="cont__right">
+              <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4be30d72ee3c841a2d46c2ec80e48384c629a537de1508ab808ac0cebf70b1df&amp;width=100%25&amp;height=479&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     @@include('var/_footer.html')
   </div>

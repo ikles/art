@@ -108,6 +108,10 @@ a:hover {
 	}
 }
 
+.show-pda {
+	display: none;
+}
+
 h1 {
 	font-weight: 400;
 	font-size: 40px;
@@ -144,6 +148,7 @@ h1 {
 }
 
 .btn {
+	border: none;
 	display: inline-flex;
 	padding: 0 25px;
 	height: 40px;
