@@ -153,10 +153,12 @@ h1 {
 	font-size: 16px;
 	color: #FFFFFF;
 	background: #A18F62;
-	font-family: $ff2;
+	font-family: $ff2;	
+  transition: 0.5s;
 	&:hover {
-		text-decoration: none;
-	}
+    text-decoration: none;
+    background-color: #BCA979;
+  }
 }
 
 .catalog__item {
