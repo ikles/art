@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>10. Интерьер</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <section class="picture__bread-w">
+        <div class="contain">
+          <div class="bread">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><span>Интерьеры</span></li>
+            </ul>
+          </div><!--bread-->
+        </div><!--contain-->
+      </section>
+      <section class="picture">
+        <div class="contain">
+          <div class="picture__row">
+            <a href="" class="picture__img-w"><img src="img/picture.jpg" class="picture__img" /></a>
+            <div class="picture__inf">
+              <div class="picture__name">Картина «Белое на белом» Евгения Зарембы</div>
+              <a href="" class="picture__perf">Проект: TWINS STUDIO </a>
+              <a href="" class="picture__perf">Стилист: Анна Крутолевич </a>
+              <a href="" class="picture__perf">Фотограф: Елизавета Гуровская</a>
+            </div>
+          </div>
+        </div>
+        <div class="contain">
+          <h3 class="h3">Работы художника</h3>
+          <div class="picture-gal__row row-20">
+            <div class="picture-gal__col">
+              <a href="" class="paint-gal__item">
+                <span class="paint-gal__img-w"><img src="img/picture-work-1.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
+              </a>
+            </div>
+            <div class="picture-gal__col">
+              <a href="" class="paint-gal__item">
+                <span class="paint-gal__img-w"><img src="img/picture-work-2.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
+              </a>
+            </div>
+            <div class="picture-gal__col">
+              <a href="" class="paint-gal__item">
+                <span class="paint-gal__img-w"><img src="img/paint-gal-3.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
+              </a>
+            </div>
+            <div class="picture-gal__col">
+              <a href="" class="paint-gal__item">
+                <span class="paint-gal__img-w"><img src="img/picture-work-4.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>
