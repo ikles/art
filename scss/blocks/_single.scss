@@ -1,0 +1,147 @@
+.paint {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+
+.paint__row {
+  display: flex;
+  margin: 0 -20px;
+}
+
+.paint__col-1 {
+  width: 50%;  
+  padding: 0 20px;
+}
+
+.paint__col-2 {
+  padding: 0 20px;  
+  width: 50%;
+}
+
+.paint__img-w {
+  width: 100%;
+  height: 478px;
+  display: block;
+  margin-bottom: 20px;
+  flex: 0 0 auto;
+}
+
+.paint__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.paint__name {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgb(67, 61, 61);
+}
+
+
+
+.paint__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.paint__txt-w {
+}
+
+.paint__h {
+  font-size: 30px;
+  line-height: 1.2;
+  color: rgb(67, 61, 61);
+}
+
+.paint__txt-1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgb(67, 61, 61);
+  margin-top: 10px;
+}
+
+.paint__btn {
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background: rgb(161, 143, 98);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.paint__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgb(67, 61, 61);
+  margin-bottom: 30px;
+}
+
+.paint__p {
+  font-size: 18px;
+  line-height: 1.4;
+  color: rgb(67, 61, 61);
+  margin-bottom: 25px;
+}
+
+
+.paint-gal {
+  padding-bottom: 40px;
+}
+
+.paint-gal__row {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.paint-gal__col {
+  width: 25%;
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+.paint-gal__item {
+  display: block;    
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.paint-gal__img-w {
+  display: block;  
+  height: 250px;
+}
+
+.paint-gal__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.paint-gal__title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  color: rgb(67, 61, 61);
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.paint-gal__name {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgb(67, 61, 61);
+}

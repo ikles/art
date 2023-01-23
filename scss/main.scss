@@ -76,7 +76,9 @@ a:hover {
 .bread {
 	margin-top: 28px;
 	ul {
-		display: flex;
+		display: flex;		
+    flex-wrap: wrap;
+    margin-top: -7px;
 		li {
 			font-weight: 400;
 			font-size: 16px;
@@ -85,6 +87,7 @@ a:hover {
 			display: flex;      
 			align-items: center;
 			color: #433D3D; 
+			margin-bottom: 7px;
 			&:not(:last-child) {        
 				flex: none;
 				margin-right: 23px;
@@ -241,6 +244,7 @@ h1 {
 @import "blocks/_footer.scss";
 @import "blocks/_index.scss";
 @import "blocks/_about.scss";
+@import "blocks/_single.scss";
 @import "blocks/_exhibit.scss";
 @import "blocks/_event.scss";
 @import "blocks/_catalog.scss";
