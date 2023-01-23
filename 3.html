@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3. События</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="bread">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><span>События</span></li>
+          </ul>
+        </div>
+        <!--bread-->
+      </div>
+      <!--contain-->
+
+      <section class="develop">
+        <div class="contain">
+          <h1 class="h1">События</h1>
+          <div class="develop__w">
+            @@include('var/_develop__row.html',{
+              "img":"img/develop-1.jpg",
+              "title":"Хрупкие оболочки",
+              "date":"15.09.22 – 15.09.22",
+              "text":"Выставка 'Хрупкие оболочки' объединила работы 8 художников: Татьяны Дубовской, Сергея Карева, Сергея Колосова, Маши Лам, Алексея Спая, Наталии Спечинской, Евгении Тарасовой и Антонины Фатхуллиной. Представлены живопись, графика и арт-объекты из стекла, керамики..."
+            })
+            @@include('var/_develop__row.html',{
+              "img":"img/develop-2.jpg",
+              "title":"Межсезонье",
+              "date":"15.09.22 – 15.09.22",
+              "text":"Межсезонье — особый период времени, который отличается размытыми дорогами и резкими перепадами температур. Смена времен года провоцирует определенное состояние души, когда вся жизнь представляется сменой вех: возрастает желание заглянуть в будущее и понять его перспективы. Представленные на выставке пейзажи..."
+            })
+            @@include('var/_develop__row.html',{
+              "img":"img/develop-3.jpg",
+              "title":"Лёгкое забытьё",
+              "date":"15.09.22 – 15.09.22",
+              "text":"В Abramova Gallery открылась первая в Петербурге персональная выставка московского скульптора Ольги Муравиной. Скульптуры Ольги украшают Музеон, Сколково, Ботанический сад и другие значимые места Москвы. На выставке будут представлены скульптуры от 15 см до 2 метров высотой...⁣"
+            })
+            @@include('var/_develop__row.html',{
+              "img":"img/develop-4.jpg",
+              "title":"Ностальгия. Среди шума и суеты",
+              "date":"15.09.22 – 15.09.22",
+              "text":"В Abramova Gallery открылась персональная выставка Вадима Леухина «Ностальгия. Среди шума и суеты». Она продлится до 26 марта. Вадим Леухин — один из заметных и востребованных молодых петербургских художников. Окончив Государственную художественно-промышленную академию им. Штиглица и фонд ProArte по специализации ..."
+            })            
+          </div>
+          <div class="develop__spagin">
+            @@include('var/_spagin.html')
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>
