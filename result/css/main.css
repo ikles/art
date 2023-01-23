@@ -2141,6 +2141,60 @@ a.cont__social {
   width: 100%;
   height: 100%; }
 
+.interior {
+  padding-bottom: 100px;
+  margin-top: 20px; }
+
+.interior__row {
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.interior__col {
+  margin-bottom: 60px;
+  width: 33.3333%;
+  padding: 0 20px; }
+
+.interior__img-w {
+  display: block;
+  width: 373px;
+  height: 373px;
+  margin-bottom: 31px; }
+
+.interior__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.interior__name {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #433d3d;
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif; }
+  .interior__name:hover {
+    text-decoration: none; }
+
+.interior__txt {
+  display: block;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #433d3d; }
+  .interior__txt a {
+    color: #433d3d; }
+
+.interior__spagin {
+  margin-top: 20px; }
+
 .catalog {
   margin-top: 20px;
   padding-bottom: 102px; }
