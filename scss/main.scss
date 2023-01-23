@@ -77,8 +77,8 @@ a:hover {
 	margin-top: 28px;
 	ul {
 		display: flex;		
-    flex-wrap: wrap;
-    margin-top: -7px;
+		flex-wrap: wrap;
+		margin-top: -7px;
 		li {
 			font-weight: 400;
 			font-size: 16px;
@@ -162,11 +162,11 @@ h1 {
 	color: #FFFFFF;
 	background: #A18F62;
 	font-family: $ff2;	
-  transition: 0.5s;
+	transition: 0.5s;
 	&:hover {
-    text-decoration: none;
-    background-color: #BCA979;
-  }
+		text-decoration: none;
+		background-color: #BCA979;
+	}
 }
 
 .catalog__item {
@@ -216,6 +216,15 @@ h1 {
 	color: #433D3D;
 	line-height: 120%;	
 	margin-top: auto;
+	font-family: $ff2;
+}
+
+.h3 {
+	font-size: 30px;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 123%;
+	color: #433D3D;
 	font-family: $ff2;
 }
 

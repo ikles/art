@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12-2. Художник (работы из нескольких категорий)</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <section class="artist__top">
+        <div class="artist__img-w">
+          <img src="img/artist__img.jpg" class="artist__img">
+        </div>
+        <div class="contain">
+          <div class="bread">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">События</a></li>
+              <li><span>Хрупкие оболочки</span></li>
+            </ul>
+          </div>
+          <!--bread-->
+        </div>
+        <!--contain-->
+      </section>
+      <section class="artist">
+        <div class="contain">
+          <div class="artist__desc">
+            <h1 class="artist__h1">Михайлов Вячеслав</h1>
+            <p>
+              Вячеслав Михайлов один из самых известных петербургских живописцев и графиков. Автор нашел свой выразительный язык, делающий работы узнаваемыми. Его письмо вторгается в мир со всей силой страсти, проникая в суть предметов и явлений,
+              высвобождая их истинную сущность. В работах Михайлова считывается стремление к философскому осмыслению первооснов жизни. На протяжении двадцати лет активной выставочной жизни он остается самим собой, всегда узнаваем и меняется,
+              развивая свою систему.⁣
+            </p>
+            <p>
+              В творчестве Вячеслава Михайлова графические работы занимают важное место и решают те же формально-пластические, структурно-технологические задачи, что и живопись. Баланс, тектоника, фактура — для него фундаментальные понятия. Даже
+              периодически возникающие выплески тона, резкие царапины гусиного пера рассчитаны в своей обузданной экспрессии. Испещренный пересекающимися штрихами бумажный лист расстилается перед зрительским взором как самодовлеющий объект,
+              результат авторских творческих размышлений.
+            </p>
+          </div>
+          <div class="artist-gal__row-item">
+            <div class="heading__wrap">
+              <div class="h3">Работы художника</div>            
+              <a href="#" class="btn__arr"><span>Живопись</span></a>
+            </div>
+            <div class="artist-gal__row row-20">
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-1.jpg",
+                  "title":"Вход в Иерусалим",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-2.jpg",
+                  "title":"Набережная Фонтанки",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-3.jpg",
+                  "title":"Одиссей",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-4.jpg",
+                  "title":"Затмение",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-1.jpg",
+                  "title":"Вход в Иерусалим",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-2.jpg",
+                  "title":"Набережная Фонтанки",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-3.jpg",
+                  "title":"Одиссей",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-4.jpg",
+                  "title":"Затмение",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>            
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-1.jpg",
+                  "title":"Вход в Иерусалим",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+            </div>
+          </div>
+          <div class="artist-gal__row-item">
+            <div class="mcatalog__btn-w">            
+              <a href="#" class="btn__arr"><span>Графика</span></a>          
+            </div>          
+            <div class="artist-gal__row row-20">
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-1.jpg",
+                  "title":"Графика I",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-2.jpg",
+                  "title":"Из серии Христос",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-3.jpg",
+                  "title":"Графика II",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-4.jpg",
+                  "title":"Графика III",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-1.jpg",
+                  "title":"Графика I",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-2.jpg",
+                  "title":"Из серии Христос",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-3.jpg",
+                  "title":"Графика II",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-4.jpg",
+                  "title":"Графика III",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-1.jpg",
+                  "title":"Графика I",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-2.jpg",
+                  "title":"Из серии Христос",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-3.jpg",
+                  "title":"Графика II",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/graphics-4.jpg",
+                  "title":"Графика III",
+                  "name":"Михайлов Вячеслав"
+                })
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>
