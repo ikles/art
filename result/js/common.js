@@ -80,7 +80,7 @@ $('.eye-3').click(function (e) {
 
   }
 
-  popup('.link2', '.modal-overlay_2', '.modal-close_2');
+  popup('.paint__btn', '.modal-overlay_1', '.modal-close_1');
 
 
 

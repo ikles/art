@@ -1741,8 +1741,8 @@ a.cont__social {
     padding-bottom: 50px; } }
 
 .paint {
-  padding-top: 60px;
-  padding-bottom: 100px; }
+  padding-top: 53px;
+  padding-bottom: 73px; }
 
 .paint__row {
   display: -webkit-flex;
@@ -1777,7 +1777,8 @@ a.cont__social {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.2;
-  color: #433d3d; }
+  color: #433d3d;
+  font-family: "Montserrat", sans-serif; }
 
 .paint__top {
   display: -webkit-flex;
@@ -1791,14 +1792,16 @@ a.cont__social {
 .paint__h {
   font-size: 30px;
   line-height: 1.2;
-  color: #433d3d; }
+  color: #433d3d;
+  font-family: "Montserrat", sans-serif; }
 
 .paint__txt-1 {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   color: #433d3d;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif; }
 
 .paint__btn {
   display: -webkit-inline-flex;
@@ -1846,6 +1849,9 @@ a.cont__social {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
+.paint__bread {
+  margin-top: 105px; }
+
 .paint-gal__col {
   width: 25%;
   padding: 0 20px;
@@ -1872,12 +1878,20 @@ a.cont__social {
   color: #433d3d;
   margin-top: 20px;
   margin-bottom: 5px;
-  display: block; }
+  display: block;
+  font-family: "Montserrat", sans-serif; }
 
 .paint-gal__name {
   font-size: 14px;
   line-height: 1.4;
   color: #433d3d; }
+
+.paint-gal__h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 123%;
+  color: #433D3D;
+  font-family: "Montserrat", sans-serif; }
 
 .develop {
   margin-top: 20px;
@@ -2384,7 +2398,7 @@ a.artists__tag {
   top: 0;
   left: 0;
   overflow-y: scroll;
-  z-index: 5;
+  z-index: 15;
   display: none;
   background: rgba(45, 40, 40, 0.5); }
 
@@ -2396,30 +2410,143 @@ a.artists__tag {
 
 .modal-form__block {
   position: absolute;
-  top: 5%;
+  top: 42px;
   margin-bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   z-index: 6;
-  width: 555px;
-  background-color: #FFF;
-  min-height: 100px; }
+  min-height: 100px;
+  max-width: 450px;
+  width: calc(100% - 40px);
+  background: #a18f62; }
 
 .modal-form__inner {
-  position: relative; }
+  position: relative;
+  padding: 55px 30px 40px 30px; }
 
-.modal-close {
-  cursor: pointer;
-  display: block;
+.checkout__close {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/close-form.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
-  right: 15px;
-  top: 15px;
-  z-index: 7;
+  right: 32px;
+  top: 32px;
+  cursor: pointer; }
+
+.checkout__title {
+  font-size: 30px;
+  line-height: 1.2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 20px;
+  padding-right: 50px;
+  font-family: "Montserrat", sans-serif; }
+
+.checkout__txt {
+  font-size: 16px;
+  line-height: 1.4;
+  color: white; }
+
+.checkout__input-text {
+  background: white;
+  font-size: 14px;
+  padding: 11px 25px 10px;
+  width: 100%;
+  margin-top: 30px;
+  border: none; }
+
+.checkout__label {
+  margin-top: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+  .checkout__label input[type="checkbox"] {
+    display: none; }
+    .checkout__label input[type="checkbox"] + span {
+      width: 22.34px;
+      height: 20px;
+      background: white;
+      -webkit-flex: 0 0 auto;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
+      position: relative; }
+      .checkout__label input[type="checkbox"] + span:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        background-color: #BCA979;
+        display: none; }
+    .checkout__label input[type="checkbox"]:checked + span:before {
+      display: block; }
+
+.checkout__label-span-txt {
+  color: white;
+  opacity: 0.8;
+  font-size: 14px;
+  margin-left: 12px;
+  line-height: 1.4; }
+
+.checkout__robot {
+  margin-top: 25px;
+  margin-bottom: 40px; }
+
+.robot__label {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.robot__label-span {
+  border: 2px solid #c1c1c1;
+  border-radius: 1px;
   width: 24px;
-  height: 24px;
-  background: url("../img/close-w.svg") no-repeat 0 0; }
+  height: 24px; }
+
+.robot__label-span-txt {
+  font-weight: 500;
+  font-size: 14px;
+  color: #433d3d;
+  margin-left: 14px; }
+
+.checkout__btn {
+  font-weight: 600;
+  font-size: 16px;
+  color: #a18f62;
+  background: #f2efed;
+  height: 50px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif; }
 
 /*end modal*/
 .lcpadding {
@@ -2486,8 +2613,10 @@ a.artists__tag {
   border: none; }
 
 body.active {
-  background: url("../img/1920.jpg") no-repeat top -3px center; }
+  background: url("../img/1920.jpg") no-repeat top 0px center; }
   body.active .wrapper {
+    opacity: 0.4; }
+  body.active .modal-overlay {
     opacity: 0.4; }
   body.active .footer {
     opacity: 0.4; }
