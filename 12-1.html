@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12-1. Художник (работы из одной категории)</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <section class="artist__top">
+        <div class="artist__img-w">
+          <img src="img/artist__img-2.jpg" class="artist__img">
+        </div>
+        <div class="contain">
+          <div class="bread">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Художники</a></li>
+              <li><span>Аксенова Ольга</span></li>
+            </ul>
+          </div>
+          <!--bread-->
+        </div>
+        <!--contain-->
+      </section>
+      <section class="artist">
+        <div class="contain">
+          <div class="artist__desc">
+            <h1 class="artist__h1">Аксенова Ольга</h1>
+            <p>В творчестве Ольги Аксёновой синтезировались традиции иконописной школы и современные тенденции сетевого искусства, объеденные интересом к мистике. Художница пытается заглянуть в пограничное с реальным пространство, наполненное призрачными существами, состоящими из мерцающих эманаций знакомых образов. Персонажи ее работ — скитальцы, гости и странники. Они кочуют по бескрайнему ландшафту памяти, мифов, сказок и легенд, из которых художница черпает свою образность. </p>
+            <p>Волнистые, закрученные, вибрирующие линии рисунка Ольги Аксёновой близки манере Эдварда Мунка. В них воплощена скрытая экспрессия норвежского живописца, подрывающая внешнее чинное спокойствие изображаемых сцен. Этот язык Ольга Аксёнова использует, чтобы передать силу проступающих сквозь рентгеновское зрение художницы ликов персонажей, населяющих её внутренний мир и его проекцию на внешнее пространство.</p>
+            <p>Художница сталкивает свой многолетний иконописный опыт и новейшие тенденции в искусстве. Используя флуоресцентные цветовые пигменты Аксёнова раскрывает мистическое содержание современного мира через обращение к образу, лику — концентрации культурной памяти.</p>
+            <p>Ольга Аксёнова — представитель молодого поколения художников и участник российских и зарубежных выставок.</p>
+            <p>Купить работу Ольги Аксеновой вы можете в ABRAMOVA GALLERY: (812) 640-17-91, info@abramovagallery.art</p>
+          </div>
+          <div class="artist-gal__row-item">
+            <div class="heading__wrap">
+              <div class="h3">Работы художника</div>              
+            </div>
+            <div class="artist-gal__row row-20">
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-11.jpg",
+                  "title":"У истоков",
+                  "name":"Аксенова Ольга"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-22.jpg",
+                  "title":"Странники. Простое и вечное.",
+                  "name":"Аксенова Ольга"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-33.jpg",
+                  "title":"Гости",
+                  "name":"Аксенова Ольга"
+                })
+              </div>
+              <div class="artist-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/art-work-44.jpg",
+                  "title":"Странники. Ожидание.",
+                  "name":"Аксенова Ольга"
+                })
+              </div>
+              
+            </div>
+          </div>        
+      </section>
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+  @@include('var/_scripts.html')
+</body>
+
+</html>

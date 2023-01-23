@@ -1901,20 +1901,19 @@ a.cont__social {
   color: #433D3D;
   font-family: "Montserrat", sans-serif; }
 
-.artist {
-  margin-top: 20px; }
-
 .artist__desc {
+  max-width: 1000px;
   font-size: 18px;
   line-height: 1.4;
-  color: #433d3d; }
+  color: #433d3d;
+  margin-bottom: 84px; }
   .artist__desc p {
     margin-bottom: 0; }
     .artist__desc p:not(:last-child) {
       margin-bottom: 25px; }
 
 .artist__img-w {
-  margin-bottom: 58px;
+  margin-bottom: 65px;
   height: 500px; }
 
 .artist__img {
@@ -1931,10 +1930,11 @@ a.cont__social {
   margin-bottom: 60px; }
 
 .artist-gal__row-item:not(:last-child) {
-  margin-bottom: 50px; }
+  margin-bottom: 35px; }
 
 .artist {
-  padding-bottom: 50px; }
+  padding-bottom: 33px;
+  margin-top: 15px; }
 
 .develop {
   margin-top: 20px;

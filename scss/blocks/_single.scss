@@ -154,31 +154,31 @@
 
 .paint-gal__h2 {
   font-weight: 400;
-font-size: 30px;
-line-height: 123%;
-color: #433D3D;
-font-family: $ff2;
+  font-size: 30px;
+  line-height: 123%;
+  color: #433D3D;
+  font-family: $ff2;
 }
 
 
 
-.artist {
-  margin-top: 20px;  
-}
+
 .artist__desc {
+  max-width: 1000px;
   font-size: 18px;
   line-height: 1.4;
   color: rgb(67, 61, 61);
+  margin-bottom: 84px;
   p {
     margin-bottom: 0;
-  &:not(:last-child) {
-    margin-bottom: 25px;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
-}
 }
 
 .artist__img-w {
-  margin-bottom: 58px;
+  margin-bottom: 65px;
   height: 500px;
 }
 
@@ -206,12 +206,14 @@ font-family: $ff2;
 
 .artist-gal__row-item {
   &:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
 .artist {
-  padding-bottom: 50px;
+  padding-bottom: 33px;
+  margin-top: 15px;  
+
 }
 
 
