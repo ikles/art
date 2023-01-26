@@ -2716,7 +2716,6 @@ a.cont__social {
   font-family: "Montserrat", sans-serif; }
 
 .picture-gal__row {
-  margin-top: 59px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2726,6 +2725,9 @@ a.cont__social {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+
+.picture-gal__contain {
+  margin-top: 59px; }
 
 .picture-gal__col {
   width: 25%;
@@ -2808,6 +2810,76 @@ a.cont__social {
     padding-right: 0 !important; }
   .picture-gal__scroll {
     overflow-x: auto; } }
+
+@media (max-width: 991px) {
+  .picture__img-w {
+    width: 100%;
+    position: static;
+    padding-top: 0;
+    margin-right: 0;
+    max-width: 683px; }
+  .picture__img {
+    position: static;
+    max-width: 100%;
+    height: auto; }
+  .picture__row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-bottom: 80px;
+    margin-top: 57px; }
+  .picture__inf {
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1; }
+  .picture__inf {
+    margin-bottom: 20px; }
+  .picture-gal__contain {
+    margin-top: 36px; }
+  .picture {
+    padding-bottom: 50px; }
+  .picture__name {
+    max-width: 510px;
+    margin-bottom: 33px; }
+  .fancybox-close-small {
+    right: -40px; } }
+
+@media (max-width: 620px) {
+  .fancybox-slide--image .fancybox-close-small {
+    right: 0;
+    top: -47px; }
+  .fancybox-slide--image {
+    padding: 60px 10px; } }
+
+@media (max-height: 576px) {
+  .fancybox-slide--image .fancybox-close-small {
+    right: 0;
+    top: -47px; } }
+
+@media (max-width: 575px) {
+  .picture__name {
+    font-size: 20px;
+    margin-bottom: 12px; }
+  .picture__perf {
+    font-size: 14px;
+    margin-bottom: 3px; }
+  .picture__h3 {
+    font-size: 20px; }
+  .picture-gal__contain {
+    margin-top: 30px; }
+  .picture__name {
+    max-width: 240px; }
+  .picture__bread-w {
+    margin-top: 7px; }
+  .picture__row {
+    margin-top: 20px;
+    margin-bottom: 59px; }
+  .picture__inf {
+    margin-bottom: 27px; } }
+
+@media (max-width: 360px) {
+  .picture-gal__row {
+    width: 1120px; } }
 
 .catalog {
   margin-top: 20px;
