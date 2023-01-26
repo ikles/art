@@ -107,7 +107,33 @@ $('.eye-3').click(function (e) {
   popup('.paint__btn', '.modal-overlay_1', '.modal-close_1');
 
 
+  function showHide(elem) {
+    let block = $(elem);    
+    var button = block.find('.toggle');
+    button.html(button.data('text'));
+    button.click(function(e){
+      e.preventDefault();      
+      let desc = $(this).prev();      
+      desc.toggleClass('more');
+      var swap = $(this).data('swap');
+      var text = $(this).data('text');
+      $(this).data('text', swap);
+      $(this).data('swap', text);
+      $(this).html(swap);
+    });
+  }
 
+  showHide('.description');
+
+
+  if( $(window).width() < 992 ) {
+    $('.fragile__gal-scroll').mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0,
+      scrollInertia: '230'
+    });    
+  }
 
   if( $(window).width() < 1129 ) {
     $(".mcatalog__scroll").mCustomScrollbar({
@@ -127,8 +153,17 @@ $('.eye-3').click(function (e) {
       mouseWheel: 0,
       scrollInertia: '230'
     });     
-   }
- });
+   }//1129
+
+   if( $(window).width() < 992 ) {
+    $('.fragile__gal-scroll').mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0,
+      scrollInertia: '230'
+    });    
+  }//992
+});//resize
 
   $('[data-fancybox="gallery"]').fancybox({
     arrows: true,
