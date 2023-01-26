@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,7 +69,17 @@
       <section class="picture">
         <div class="contain">
           <div class="picture__row">
-            <a href="" class="picture__img-w"><img src="img/picture.jpg" class="picture__img" /></a>
+            <a data-fancybox="gallery" href="img/picture.jpg" class="picture__img-w">
+              <img src="img/picture.jpg" class="picture__img" />
+            </a>
+            <div class="picture__gallery">
+              <a data-fancybox="gallery" href="img/picture.jpg" class="picture__img-w">
+              <img src="img/picture.jpg" class="picture__img" />
+            </a>
+            <a data-fancybox="gallery" href="img/picture.jpg" class="picture__img-w">
+              <img src="img/picture.jpg" class="picture__img" />
+            </a>
+            </div>
             <div class="picture__inf">
               <div class="picture__name">Картина «Белое на белом» Евгения Зарембы</div>
               <a href="" class="picture__perf">Проект: TWINS STUDIO </a>
@@ -135,6 +146,7 @@
   <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

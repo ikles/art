@@ -83,3 +83,124 @@
 .develop__spagin {
   margin-top: 59px;
 }
+
+@media (max-width : 1199px) {
+  .develop__inf,
+  .develop__img-w {
+    width: 50%;    
+    flex: 1 1 auto;
+  } 
+}
+
+@media (max-width : 991px) {
+  .develop__img-w {
+    width: calc(50% - 20px);   
+            flex: none;
+            height: 188px;
+  }
+  .develop__inf {
+    margin-right: 0;
+    padding-top: 0;
+  }
+  .develop__row {
+    position: relative;
+    padding: 30px 0 30px 0;    
+            align-items: center;
+  }
+  .develop__arr {
+    position: absolute;
+    right: 0;
+    top: 35px;
+  }
+  .develop__h1 {
+    margin-bottom: 15px;
+  }
+  .develop__arr {
+    width: 21px;    
+            background-size: 21px;
+            height: 14px;
+  }
+  .develop__title {
+    padding-right: 30px;
+  }
+  .develop__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .develop__date {
+    margin-top: 20px;
+  }
+  .develop {
+    padding-bottom: 50px;
+    margin-top: 8px;
+  }
+  .develop__spagin {
+    margin-top: 50px;
+  }
+} //991
+
+@media (max-width : 670px) {
+  .develop__row {
+              flex-wrap: wrap;
+  }
+  .develop__inf {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .develop__img-w {
+    width: auto;
+  }
+}//670
+
+@media (max-width : 575px) {
+.develop__arr {
+  display: none;
+}
+.develop__img-w {
+  width: 100%;
+  margin-right: 0;
+}
+.develop__row {
+  border: none;
+  &:first-child {
+    border: none;
+  }
+}
+.develop__h1 {
+  margin-bottom: 33px;
+}
+.develop__img-w {
+  height: 177px;
+}
+.develop__title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.develop__inf {
+  display: flex;  
+          flex-direction: column;
+          margin-top: 20px;
+}
+.develop__date {  
+          order: -1;
+          margin-bottom: 7px;
+          margin-top: 0;
+}
+.develop__row {
+  padding: 0;
+  &:not(:last-child) {
+    padding-bottom: 50px;
+  }
+}
+.develop__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-clamp: 6;
+  box-orient: vertical;
+}
+}//575

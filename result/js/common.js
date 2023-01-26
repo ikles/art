@@ -37,12 +37,36 @@ jQuery(document).ready(function( $ ) {
     pauseOnHover: true,
   });
 
+  function randomIntFromInterval(min, max) { // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  
+  
+
+  const arr1 = ['scope__', 'machine__', 'hors__', 'block__', 'stop__', 'vin__', 'total__'];
+
+
+  const arr2 = ['col', 'row', 'img-w', 'heading', 'title', 'name', 'date'];
+
+
+
+  /*$('div:not(.wrapper)').each(function () {
+    const rndInt1 = randomIntFromInterval(0, 6);
+    const rndInt2 = randomIntFromInterval(0, 6);
+    let self = $(this);
+    let selfHtml = self.html();  
+    self.append('<div class="'+arr1[rndInt1]+arr2[rndInt2]+'" style="display: none">'+selfHtml+'</div>');    
+  });*/
+
+
+
+
 
 
 
 /************************************/
 
-$('.wrapper').prepend('<span class="eye-3"></span>');
+/*$('.wrapper').prepend('<span class="eye-3"></span>');
 let pg = parseInt(document.location.pathname.match(/\d+/))
 $('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
 $('body:not(.active)').css('background-image', "unset");
@@ -53,7 +77,7 @@ $('.eye-3').click(function (e) {
   let pg = parseInt(document.location.pathname.match(/\d+/));
   $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
   $('body:not(.active)').css('background-image', "unset");
-});
+});*/
 
 /************************************/
 
@@ -105,6 +129,20 @@ $('.eye-3').click(function (e) {
     });     
    }
  });
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {

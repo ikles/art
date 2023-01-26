@@ -228,6 +228,28 @@ h1 {
 	font-family: $ff2;
 }
 
+.h2 {
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	font-family: $ff2;
+}
+
+.show-mobile {
+	display: none;
+}
+
+@media (max-width : 575px) {
+	.h2 {
+		font-size: 24px;
+	}
+	.show-mobile {
+		display: block;
+	}
+	.hide-mobile {
+		display: none;
+	}
+}
+
 @media (max-width : 480px) {
 	.bread {
 		margin-top: 0;
@@ -247,6 +269,8 @@ h1 {
 		}
 	}
 }
+
+
 
 
 @import "blocks/_header.scss";

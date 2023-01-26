@@ -91,3 +91,61 @@
   line-height: 1.4;
   color: rgb(67, 61, 61);
 }
+
+.picture__gallery {
+  display: none;
+}
+
+.fancybox-close-small {
+  background: url("../img/fclose.svg") $nr center;
+  width: 28px;
+  height: 28px;  
+          background-size: 28px;
+          top: 0;
+          right: -100px;
+  svg {
+    display: none;
+  }
+}
+
+@media (max-height: 576px) {
+.fancybox-slide--image .fancybox-close-small {
+   background: url("../img/fclose.svg") $nr center;
+  width: 28px;
+  height: 28px;  
+          background-size: 28px;
+          top: 0;
+          right: -100px;
+  svg {
+    display: none;
+  }
+}
+}
+
+
+.fancybox-navigation {  
+  .fancybox-button {
+    background: url("../img/farrow.svg") $nr center;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    &[disabled] {
+    opacity: 0.4 $i;      
+    }
+    &:hover {      
+    }
+    svg {
+      display: none;
+    }
+  }
+   .fancybox-button--arrow_left {
+     
+   }
+   .fancybox-button--arrow_right {
+     transform: rotate(180deg);
+   }
+}
+
+.fancybox-is-open .fancybox-bg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #FFFFFF;
+}
