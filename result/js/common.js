@@ -145,7 +145,7 @@ $('.eye-3').click(function (e) {
   } 
 
   if( $(window).width() < 1200 ) {
-    $(".paint-gal__scroll").mCustomScrollbar({
+    $(".paint-gal__scroll, .picture-gal__scroll").mCustomScrollbar({
       axis: "x",
       theme: "dark-3",
       mouseWheel: 0,
@@ -173,7 +173,7 @@ $('.eye-3').click(function (e) {
     });    
   }//992
   if( $(window).width() < 1200 ) {
-    $(".paint-gal__scroll").mCustomScrollbar({
+    $(".paint-gal__scroll, .picture-gal__scroll").mCustomScrollbar({
       axis: "x",
       theme: "dark-3",
       mouseWheel: 0,
