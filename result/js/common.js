@@ -142,6 +142,15 @@ $('.eye-3').click(function (e) {
       mouseWheel: 0,
       scrollInertia: '230'
     });    
+  } 
+
+  if( $(window).width() < 1200 ) {
+    $(".paint-gal__scroll").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0,
+      scrollInertia: '230'
+    });    
   }
 
 
@@ -163,6 +172,14 @@ $('.eye-3').click(function (e) {
       scrollInertia: '230'
     });    
   }//992
+  if( $(window).width() < 1200 ) {
+    $(".paint-gal__scroll").mCustomScrollbar({
+      axis: "x",
+      theme: "dark-3",
+      mouseWheel: 0,
+      scrollInertia: '230'
+    });    
+  }//1100
 });//resize
 
   $('[data-fancybox="gallery"]').fancybox({

@@ -29,8 +29,11 @@
   z-index: 6;     
   min-height: 100px;
   max-width: 450px;
-  width: calc(100% - 40px);
+  width: calc(100% - 60px);
   background: rgb(161, 143, 98);  
+  @media (max-width : 360px) {
+  width: calc(100% - 30px);
+  }
 }
 
 .modal-form__inner {
@@ -119,8 +122,7 @@
 
 
 .checkout__label-span-txt {
-  color: rgb(255, 255, 255);
-  opacity: 0.8;
+  color: rgb(255, 255, 255);  
   font-size: 14px;
   margin-left: 12px;
   line-height: 1.4;
@@ -129,6 +131,9 @@
 .checkout__robot {
   margin-top: 25px;
   margin-bottom: 40px; 
+  img {
+    max-width: 100%;
+  }
 }
 
 .robot__label {
@@ -233,6 +238,34 @@
 
 .nobrd {
   border: none;
+}
+
+@media (max-width : 575px) {
+  .checkout__title {
+    font-size: 24px;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+  .checkout__txt {
+    font-size: 14px;
+  }
+  .modal-form__inner {
+    padding: 54px 20px 45px 20px;
+  }
+  .checkout__close {
+    width: 15px;
+    height: 15px;    
+    padding-top: 0;         
+            background-size: 15px;    
+            top: 24px;
+    right: 24px;
+  }
+  .checkout__btn {
+    height: 40px;
+  }
+  .checkout__robot {
+    margin-bottom: 30px;
+  }
 }
 
 

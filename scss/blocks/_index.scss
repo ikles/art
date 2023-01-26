@@ -666,6 +666,15 @@ a.cont__social {
   right: 360px;
 }
 
+  .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger,
+  .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
+    opacity: 0;
+    height: 0;
+  }
+  .mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 0;
+  }
+
 @media (max-width : 1200px) {
   .advert__right {
     width: 50%;
@@ -716,14 +725,7 @@ a.cont__social {
       flex: none;
     }
   }
-  .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger,
-  .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
-    opacity: 0;
-    height: 0;
-  }
-  .mCSB_horizontal.mCSB_inside>.mCSB_container {
-    margin-bottom: 0;
-  }
+
 
 
 }//1128

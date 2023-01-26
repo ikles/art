@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Одиночная работа (без цены)</title>
+  @@include('var/_stl.html')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main">
+      <div class="contain">
+        <div class="paint__bread bread">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Живопись</a></li>
+            <li><a href="#">Владимир Мигачев</a></li>
+            <li><span>Дом в лесу</span></li>
+          </ul>
+        </div>
+        <!--bread-->
+      </div>
+      <!--contain-->
+      <section class="paint">
+        <div class="contain">
+          <div class="paint__row">
+            <div class="paint__col-1"><a href="" class="paint__img-w"><img src="img/paint.jpg" class="paint__img"></a><a
+              class="paint__name">Владимир Мигачёв</a></div>
+              <div class="paint__col-2">
+                <div class="paint__top">
+                  <div class="paint__txt-w">
+                    <div class="paint__h">Дом в лесу</div>
+                    <div class="paint__txt-1">Холст, акрил, 100 х 120 см</div>
+                  </div>
+                  <a href="" class="paint__btn btn">Узнать цену</a>
+                </div>
+                <div class="paint__price">—</div>
+                <p class="paint__p">Обращаясь к богатой традиции русской пейзажной живописи, Владимир Мигачёв привносит в
+                  неё современную трактовку: все элементы его пейзажа доведены до уровня индекса, где небо, земля и лес
+                  становятся символическим пространством — отпечатком внутреннего зрения художника на холсте.
+                </p>
+                <p class="paint__p">Изображая переходное, колеблющееся состояние природы в межсезонье с одиноко стоящим на
+                  опушке домом, который озаряется лучами холодного весеннего света, художник проецирует на холст
+                  собственные переживания: тёмный колорит создаёт меланхолическое настроение, однако мрачность композиции
+                  преображается в пятнах активного цвета, пробивающейся сквозь зимнюю мёртвую природу. Художник насыщает
+                  холст контрастами света и тени, а экспрессивная техника с потеками краски усиливает внутреннее
+                  напряжение.
+                </p>
+                <p class="paint__p">Мигачева не интересуют живописные панорамные виды, он с чуткостью изображает
+                  прозаичные лесные опушки, часто встречающиеся нашему взгляду. Так же, как контрасты темного и яркого
+                  колорита, света и тени, прозаичность его видов сталкивается поэтическим созерцанием, с которым художник
+                  подходит к своей живописи. В этом заключается особенность творчества Владимира Мигачёва: в своей
+                живописи он соединяет весь спектр эмоций, показывая бесконечное разнообразие природных состояний.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="paint-gal">
+          <div class="contain">
+            <div class="paint-gal__h2">Другие работы автора</div>
+            <div class="paint-gal__row row-20">
+              <div class="paint-gal__col">
+                @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-1.jpg",
+                  "title":"Прогулка",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-2.jpg",
+                  "title":"Пейзаж “Милосердие”",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-3.jpg",
+                  "title":"Пейзаж - 1. Осень",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-4.jpg",
+                  "title":"Долгий день",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-5.jpg",
+                  "title":"Межсезонье - 1",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-6.jpg",
+                  "title":"Весна 19-1",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-7.jpg",
+                  "title":"Пейзаж 22-03",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              <div class="paint-gal__col">
+                 @@include('var/_paint-gal__item.html',{
+                  "img":"img/paint-gal-8.jpg",
+                  "title":"Пейзаж 22-04",
+                  "name":"Мигачев Владимир"
+                })
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+      </main>
+      @@include('var/_footer.html')
+    </div>
+    <!--wrapper-->
+    @@include('var/_scripts.html')
+    @@include('var/_modal.html')
+  </body>
+  </html>
