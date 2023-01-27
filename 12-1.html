@@ -41,10 +41,15 @@
             <p>Ольга Аксёнова — представитель молодого поколения художников и участник российских и зарубежных выставок.</p>
             <p>Купить работу Ольги Аксеновой вы можете в ABRAMOVA GALLERY: (812) 640-17-91, info@abramovagallery.art</p>
           </div>
-          <div class="artist-gal__row-item">
-            <div class="heading__wrap">
-              <div class="h3">Работы художника</div>              
+        </div>
+        <div class="artist-gal__row-item">
+          <div class="heading__wrap">
+            <div class="contain">
+              <div class="artist-gal__h3 h3">Работы художника</div>              
             </div>
+          </div>
+          <div class="artist-gal__scroll-contain contain">
+           <div class="artist-gal__scroll">
             <div class="artist-gal__row row-20">
               <div class="artist-gal__col">
                 @@include('var/_paint-gal__item.html',{
@@ -74,15 +79,16 @@
                   "name":"Аксенова Ольга"
                 })
               </div>
-              
-            </div>
-          </div>        
-      </section>
-    </main>
-    @@include('var/_footer.html')
-  </div>
-  <!--wrapper-->
-  @@include('var/_scripts.html')
+            </div>              
+          </div>
+        </div>
+      </div>        
+    </section>
+  </main>
+  @@include('var/_footer.html')
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
 </body>
 
 </html>
