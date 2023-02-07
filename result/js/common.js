@@ -20,43 +20,98 @@ jQuery(document).ready(function( $ ) {
 
 
 
-
-
-
-
-  $('.advert__slider').slick({
+  $('.main__slider').slick({
     infinite: true,    
     speed: 400,
     slidesToScroll: 1,
     autoplay: false,    
     slidesToShow: 1,
-    cssEase: 'linear',  
+    cssEase: 'linear',
     autoplaySpeed: 0,  
     arrows: true,
     dots: true,
     pauseOnHover: true,
   });
 
-  function randomIntFromInterval(min, max) { // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min)
-  }
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,    
+    arrows: true,
+    fade: true,
+    infinite: false,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,    
+    arrows: true,
+    infinite: false,
+    speed: 400,
+    cssEase: 'ease-out',
+    focusOnSelect: true,
+    responsive: [
+
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    ]
+  });
+
+    $('[data-fancybox="gallery3"]').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: false,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '850px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+
+  $('[data-fancybox="gallery2"]').fancybox({
+    arrows: true,
+    infobar: false,
+    smallBtn: true,
+    toolbar: false,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+
+
   
-  
-
-  const arr1 = ['scope__', 'machine__', 'hors__', 'block__', 'stop__', 'vin__', 'total__'];
 
 
-  const arr2 = ['col', 'row', 'img-w', 'heading', 'title', 'name', 'date'];
-
-
-
-  /*$('div:not(.wrapper)').each(function () {
-    const rndInt1 = randomIntFromInterval(0, 6);
-    const rndInt2 = randomIntFromInterval(0, 6);
-    let self = $(this);
-    let selfHtml = self.html();  
-    self.append('<div class="'+arr1[rndInt1]+arr2[rndInt2]+'" style="display: none">'+selfHtml+'</div>');    
-  });*/
 
 
 
@@ -182,19 +237,26 @@ $('.eye-3').click(function (e) {
   }//1100
 });//resize
 
-  $('[data-fancybox="gallery"]').fancybox({
+
+
+/*    $('#example4').sliderPro({
+    width: 828,
+    height: 655,
+    fade: true,
     arrows: true,
-    infobar: false,
-    smallBtn: true,
-    toolbar: false,
-    iframe : {
-      css : {
-        width : '950px'
-      }
-    },    
-    slideClass: "myClass",
-    baseClass: "myclass"
-  });
+    buttons: false,
+    fullScreen: false,
+    shuffle: true,
+    smallSize: 500,
+    mediumSize: 1000,
+    largeSize: 3000,
+    thumbnailArrows: true,
+    autoplay: false
+  });*/
+
+
+
+
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {

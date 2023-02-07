@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery.sliderPro.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -68,24 +69,23 @@
               <a href="#" class="advert__btn btn__arr"><span>Подробнее</span></a>
             </div>
             <div class="advert__right">
-              <div class="advert__slider">
-                <div class="advert__slide">
-                  <img src="img/advert.jpg" class="advert__img">
+              <div class="main__slider">
+                <div class="main__slide">
+                  <img src="img/main-slide.jpg" class="main-slider__img">
                 </div>
-                <div class="advert__slide">
-                  <img src="img/advert.jpg" class="advert__img">
+                <div class="main__slide">
+                  <img src="img/main-slide.jpg" class="main-slider__img">
                 </div>
-                <div class="advert__slide">
-                  <img src="img/advert.jpg" class="advert__img">
+                <div class="main__slide">
+                  <img src="img/main-slide.jpg" class="main-slider__img">
                 </div>
-                <div class="advert__slide">
-                  <img src="img/advert.jpg" class="advert__img">
+                <div class="main__slide">
+                  <img src="img/main-slide.jpg" class="main-slider__img">
                 </div>
-                <div class="advert__slide">
-                  <img src="img/advert.jpg" class="advert__img">
+                <div class="main__slide">
+                  <img src="img/main-slide.jpg" class="main-slider__img">
                 </div>
-              </div>
-              <!--advert__slider-->
+              </div>              
             </div>
           </div>
         </div>
@@ -379,18 +379,22 @@
                 <input name="mail" class="consult__input" type="text" placeholder="Ваш e-mail" />
                 <textarea name="mess" class="consult__textarea"
                 placeholder="Напишите ваше сообщение здесь..."></textarea>
+                <div class="checkout__robot">
+                  <img src="img/checkout__robot.jpg" alt="">
+                </div>
                 <label class="consult__label">
                   <input type="checkbox" checked>
                   <span></span>
-                  <span class="consult__label-text">
-                    Ставя отметку, вы даете согласие на обработку своих <br />
-                    персональных данных
-                  </span>
-                </label>
+                  <div class="consult__label-text">
+                    Ставя отметку, вы даете согласие на <a href="#obr">обработку своих <br />
+                    персональных данных</a>
+                  </div>
+                </label>                
                 <div class="consult__btn-w">
                   <a href="#" class="consult__add">добавьте фото</a>
                   <button class="consult__btn btn">Отправить сообщение</button>
                 </div>
+
               </form>
             </div>
           </div>
@@ -399,7 +403,7 @@
       <section class="exhib">
         <div class="contain">
           <div class="heading__wrap">
-            <div class="h2">Выставки</div>
+            <div class="h2">События</div>
             <a href="#" class="btn__arr">Все проекты</a>
           </div>
           <div class="exhib__row row-20">
@@ -454,93 +458,94 @@
           </div>
         </div>
       </section>
-      <section class="subscribe">
+
+          <section class="subscribe">
         <div class="contain">
           <div class="subscribe__title">Подписаться на рассылку новостей</div>
-          <div class="subscribe__text">Анонсы выставок, лекций, новые поступления, спец.предложения, <br>
-          Рассылка выходит 1-2 раза в месяц.</div>
-          <form class="subscribe__form">
-            <input class="subscribe__input" type="text" placeholder="Ваш e-mail">
-            <button class="subscribe__btn btn">Подписаться</button>
-          </form>
+<div class="subscribe__text">Анонсы выставок, лекций, новые поступления, спец.предложения, <br>
+Рассылка выходит 1-2 раза в месяц.</div>
+<form class="subscribe__form">
+  <input class="subscribe__input" type="text" placeholder="Ваш e-mail">
+  <button class="subscribe__btn btn">Подписаться</button>
+</form>
         </div>
       </section>
       <section class="cont">
         <div class="contain">
           <div class="cont__row">
-            <div class="cont__left">
-              <div class="cont__title">Контакты</div>
-              <div class="cont__adress">
-                Санкт-Петербург,<br />
-                Красногвардейская пл., 3E,<br />
-                Design District DAA, 3 этаж, Е3-130
-              </div>              
-              <a href="#" href="tel:+7 812 640-17-91">+7 812 640-17-91</a>
-              <a href="#" href="tel:+7 905 22-703-55">+7 905 22-703-55</a>
-              <a href="#" href="mailto:info@abramovagallery.art">info@abramovagallery.art</a>
-              
-              <div class="hide-mobile">
-                <div class="cont__hours">
-                  Часы работы:<br />
-                  вторник - суббота с 12:00 до 19:00
-                </div>
-                <div class="cont__socials">
-                  <a href="" class="cont__social"><img src="img/soc-1.svg" /></a>
-                  <a href="" class="cont__social"><img src="img/soc-2.svg" /></a>
-                  <a href="" class="cont__social"><img src="img/soc-3.svg" /></a>
-                </div>
-              </div>
+  <div class="cont__left">
+    <div class="cont__title">Контакты</div>
+    <div class="cont__adress">
+      Санкт-Петербург,<br />
+      Красногвардейская пл., 3E,<br />
+      Design District DAA, 3 этаж, Е3-130
+    </div>              
+    <a href="#" href="tel:+7 812 640-17-91">+7 812 640-17-91</a>
+    <a href="#" href="tel:+7 905 22-703-55">+7 905 22-703-55</a>
+    <a href="#" href="mailto:info@abramovagallery.art">info@abramovagallery.art</a>
 
-            </div>
-            <div class="cont__right">
-              <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4be30d72ee3c841a2d46c2ec80e48384c629a537de1508ab808ac0cebf70b1df&amp;width=100%25&amp;height=479&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
-            <div class="show-mobile cont__show">
-              <div class="cont__hours">
-                Часы работы:<br />
-                вторник - суббота с 12:00 до 19:00
-              </div>
-              <div class="cont__socials">
-                <a href="" class="cont__social"><img src="img/soc-1.svg" /></a>
-                <a href="" class="cont__social"><img src="img/soc-2.svg" /></a>
-                <a href="" class="cont__social"><img src="img/soc-3.svg" /></a>              
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="hide-mobile">
+      <div class="cont__hours">
+        Часы работы:<br />
+        вторник - суббота с 12:00 до 19:00
+      </div>
+      <div class="cont__socials">
+        <a href="" class="cont__social"><img src="img/soc-1.svg" /></a>
+        <a href="" class="cont__social"><img src="img/soc-2.svg" /></a>
+        <a href="" class="cont__social"><img src="img/soc-3.svg" /></a>
+      </div>
+    </div>
 
-    </main>
-    <footer class="footer">
-  <div class="contain">
-    <a href="index.html" class="footer__logo">
-      <img src="img/logo-foot.svg" alt="">
-    </a>
-    <div class="footer__row">
-     <ul class="footer__ul">
-      <li class="footer__li"><a href="">О нас</a></li>
-      <li class="footer__li"><a href="">События</a></li>
-      <li class="footer__li"><a href="">Живопись</a></li>
-      <li class="footer__li"><a href="">Скульптура и объекты</a></li>
-      <li class="footer__li"><a href="">Графика</a></li>
-      <li class="footer__li"><a href="">Интерьеры</a></li>
-      <li class="footer__li"><a href="">Художники</a></li>
-      <li class="footer__li"><a href="">Контакты</a></li>
-    </ul>
   </div>
-  <div class="footer__row-2">
-    <div class="copy">2018-2022 @Галерея Елены Абрамовой</div>
-    <a href="#" class="polyt">Политика конфиденциальности сайта</a>
-    <div class="rights">Все права защищены</div>
+  <div class="cont__right">
+    <script async type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4be30d72ee3c841a2d46c2ec80e48384c629a537de1508ab808ac0cebf70b1df&amp;width=100%25&amp;height=479&amp;lang=ru_RU&amp;scroll=false"></script>
+  </div>
+  <div class="show-mobile cont__show">
+    <div class="cont__hours">
+      Часы работы:<br />
+      вторник - суббота с 12:00 до 19:00
+    </div>
+    <div class="cont__socials">
+      <a href="" class="cont__social"><img src="img/soc-1.svg" /></a>
+      <a href="" class="cont__social"><img src="img/soc-2.svg" /></a>
+      <a href="" class="cont__social"><img src="img/soc-3.svg" /></a>              
+    </div>
   </div>
 </div>
-</footer>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="contain">
+        <a href="index.html" class="footer__logo">
+          <img src="img/logo-foot.svg" alt="">
+        </a>
+        <div class="footer__row">
+         <ul class="footer__ul">
+          <li class="footer__li"><a href="">О нас</a></li>
+          <li class="footer__li"><a href="">События</a></li>
+          <li class="footer__li"><a href="">Живопись</a></li>
+          <li class="footer__li"><a href="">Скульптура и объекты</a></li>
+          <li class="footer__li"><a href="">Графика</a></li>
+          <li class="footer__li"><a href="">Интерьеры</a></li>
+          <li class="footer__li"><a href="">Художники</a></li>
+          <li class="footer__li"><a href="">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__row-2">
+        <div class="copy">2018-2022 @Галерея Елены Абрамовой</div>
+        <a href="#" class="polyt">Политика конфиденциальности сайта</a>
+        <div class="rights">Все права защищены</div>
+      </div>
+    </div>
+  </footer>
   </div>
   <!--wrapper-->
   <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.sliderPro.min.js"></script>
 <script src="js/common.js"></script>
 </body>
 

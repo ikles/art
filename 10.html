@@ -52,39 +52,51 @@
         </div>
         <div class="picture-gal__contain contain">
           <div class="picture-gal__scroll">
-          <div class="picture-gal__row row-20">
-            <div class="picture-gal__col">
-              <a href="" class="paint-gal__item">
-                <span class="paint-gal__img-w"><img src="img/picture-work-1.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
-              </a>
-            </div>
-            <div class="picture-gal__col">
-              <a href="" class="paint-gal__item">
-                <span class="paint-gal__img-w"><img src="img/picture-work-2.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
-              </a>
-            </div>
-            <div class="picture-gal__col">
-              <a href="" class="paint-gal__item">
-                <span class="paint-gal__img-w"><img src="img/paint-gal-3.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
-              </a>
-            </div>
-            <div class="picture-gal__col">
-              <a href="" class="paint-gal__item">
-                <span class="paint-gal__img-w"><img src="img/picture-work-4.jpg" class="paint-gal__img" /></span><span class="paint-gal__title">Барохори</span><span class="paint-gal__name">Заремба Евгений</span>
-              </a>
-            </div>
-            </div>
-          </div>
+            <div class="picture-gal__row row-20">
+              <div class="picture-gal__col">
+                @@include('var/_catalog__item.html',{
+                 "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
+                 "img":"img/catalog-img-1.jpg",
+                 "price":"160 000 р.",
+                 "info":"Спай Алексей; 132х128"
+               })  
+             </div>
+             <div class="picture-gal__col">
+               @@include('var/_catalog__item.html',{
+                 "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
+                 "img":"img/catalog-img-2.jpg",
+                 "price":"50 000 р.",
+                 "info":"Спай Алексей; 132х128"
+               })  
+             </div>
+             <div class="picture-gal__col">
+               @@include('var/_catalog__item.html',{
+                 "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
+                 "img":"img/catalog-img-3.jpg",
+                 "price":"170 000 р.",
+                 "info":"Спай Алексей; 132х128"
+               })  
+             </div>
+             <div class="picture-gal__col">
+              @@include('var/_catalog__item.html',{
+               "title":"Открытие выставки. Главный Штаб, Эрмитаж. Вид сверху.",
+               "img":"img/catalog-img-4.jpg",
+               "price":"90 000 р.",
+               "info":"Спай Алексей; 132х128"
+             })  
+           </div>
+         </div>
+       </div>
 
-        </div>
-      </section>
+     </div>
+   </section>
 
 
-    </main>
-    @@include('var/_footer.html')
-  </div>
-  <!--wrapper-->
-  @@include('var/_scripts.html')
+ </main>
+ @@include('var/_footer.html')
+</div>
+<!--wrapper-->
+@@include('var/_scripts.html')
 </body>
 
 </html>
